@@ -116,7 +116,9 @@ class ValueMapper
     private function decodeValue($type, $value)
     {
         switch ($type) {
-            case 'booleanValue':
+            case 'booleanValue':                
+                return $value;
+
             case 'nullValue':
                 return null;
                 
